@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JAVASHRIFT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="hud">
+      <div id="lives"></div>
+      <table>
+        <tr><th>Score</th><td id="score">0</td></tr>
+        <tr><th>Meilleur</th><td id="best">0</td></tr>
+        <tr><th>Historique</th><td id="history">-</td></tr>
+      </table>
+    </div>
+
+    <div id="game">
+      <div id="player"></div>
+
+      <div id="menu">
+        <h1>JAVASHRIFT</h1>
+        <p>Choisis ton personnage :</p>
+        <div id="characters">
+          <img src="layouts/johny.png" data-skin="johny.png" class="character selected">
+          <img src="layouts/player2.png" data-skin="player2.png" class="character">
+          <img src="layouts/player3.png" data-skin="player3.png" class="character">
+        </div>
+        <div id="menuButtons">
+          <button class="ui-button" id="showStats">📊 Voir mes statistiques</button>
+          <button class="ui-button" id="resetStats">🗑 Réinitialiser</button>
+        </div>
+        <button class="ui-button" id="startGame">Commencer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
